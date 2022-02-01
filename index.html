@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/logo.png">
+  <title>Just Programmers</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- custom css file cdn link  -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- header section starts  -->
+
+  <header class="header">
+
+    <a href="#" class="logo"> <img src="images/logo.png" alt="">&ensp;Just Programmers</a>
+
+    <form action="" class="search-form">
+      <input type="search" name="" placeholder="search here..." id="searchBox">
+      <label for="searchBox" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-moon" id="theme-btn"></div>
+      <div class="fas fa-user" id="login-btn"></div>
+      <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#advantage">How-it-works</a>
+      <a href="#quick">Quick-start-guide</a>
+      <a href="#feature">features</a>
+      <a href="#language">language</a>
+    </nav>
+
+    <form action="" class="login-form" id="login-form">
+
+      <div class="inputBox">
+        <span>username</span>
+        <input type="text" placeholder="enter your name">
+      </div>
+
+      <div class="inputBox">
+        <span>password</span>
+        <input type="password" placeholder="enter your password">
+      </div>
+
+      <div class="remember">
+        <input type="checkbox" name="" id="login-remember">
+        <label for="login-remember">remember me</label>
+      </div>
+
+      <input type="submit" class="btn" value="login">
+
+    </form>
+
+  </header>
+
+  <!-- header section ends -->
+
+
+  <section id="home">
+    <div class="griding">
+      <div class="home-text">
+        <h1>A simple language for developing full-stack web apps with less code.</h1>
+        <h2>Describe high-level features with Just Programmers DSL and write the rest of your logic in React, Node.js and Prisma.</h2>
+        <div class="home-img">
+          <img src="images/react.svg" alt="">
+          <img src="images/node.svg" alt="">
+          <img src="images/prisma.svg" alt="">
+        </div>
+      </div>
+      <div class="codes">
+        <h1>todoApp.Just Programmers</h1>
+        <p> <span>app todoApp {</span> <br>
+          title<span>:</span> <strong>"ToDo App"</strong> <em>/* visible in tab */</em> <br>
+          <span>}</span> <br><br>
+          <span>route&ensp;"&ensp;/&ensp;"&ensp;->&ensp;page&ensp;Main</span> <br>
+          <span>page Main {</span> <br>
+          <em>/* import your React code */</em> <br>
+          component <span>:</span>import Main from <strong>"@ext/Main.js"</strong> <br>
+          <span>}</span> <br><br>
+          <span>auth {</span> <em>/* full-stack auth out-of-the-box */</em> <br>
+          userEntity <span>:</span> User <span>,</span>
+          methods <span>:</span> [ EmailAndPassword ] <span>,</span> <br>
+          <span>}</span>
+        </p>
+      </div>
+    </div>
+    <a class="log-prog" href="#login-form">Try Just Programmers in 5 minutes -></a>
+  </section>
+
+
+  <section id="advantage">
+    <h1>Just Programmers is an open source, declarative DSL for devs who want to use modern web dev stack (React <img src="images/react.png" alt=""> , Node.js <img src="images/node.png" alt=""> , Prisma <img src="images/prisma.png" alt="">, ...) without writing
+      boilerplate.</h1>
+    <h2>Frontend, backend and deployment - all unified with one concise language.</h2>
+    <h2>Zero configuration, all best practices.</h2>
+    <h3>{ = = }</h3>
+    <h4>How it works</h4>
+    <h5>Given <span>.Just Programmers</span> + <span>.js</span>, <span>.css</span>, <span>...</span> files as an input, Just Programmers compiler behind the scene generates the full source code of your web app - front-end, back-end and deployment.</h5>
+    <img class="adv" src="images/adv.png" alt="">
+    <h3>{ = = }</h3>
+  </section>
+
+
+
+  <section id="start">
+    <div class="">
+      <h1>Quick start</h1>
+      <h2>No more endless configuration files. Create a production-ready web app with just a few lines of code - we will set you up with all the best defaults.</h2>
+    </div>
+    <div class="">
+      <h1>Speed & Power</h1>
+      <h2>Move fast using Just Programmers's declarative language, but also drop down to js/html/css... when you require more control.</h2>
+    </div>
+    <div class="">
+      <h1>No lock-in</h1>
+      <h2>If Just Programmers becomes too limiting for you, simply eject and continue with the human-readable source code following industry best-practices.</h2>
+    </div>
+  </section>
+
+
+  <section id="quick">
+    <h1>{ = = }</h1>
+    <h3>Quick to start, easy to scale</h3>
+    <h2>Just Programmers aims to be at least as flexible as the traditional web frameworks like Ruby on Rails. Start your project quickly with the best defaults and customize and scale it as it grows.</h2>
+    <h2>As an example, we used Just Programmers to implement a copy of Medium:</h2>
+    <img src="images/quick.png" alt="">
+    <h2>You can try out the deployed app <span>here</span> or check out the source code <span>here.</span></h2>
+    <h1>{ = = }</h1>
+    <h3 id="feature">Features & Roadmap</h3>
+    <div class="pointing">
+      <div class="points">
+        <h4>Alpha</h4>
+        <p><i class="fas fa-check-square">&emsp;</i>full-stack auth (email & password)</p>
+        <p><i class="fas fa-check-square">&emsp;</i>pages & routing</p>
+        <p><i class="fas fa-check-square">&emsp;</i>blurs the line between client & server - define your server actions and queries and call them directly in your client code (RPC)!</p>
+        <p><i class="fas fa-check-square">&emsp;</i>smart caching of server actions and queries (automatic cache invalidation)</p>
+        <p><i class="fas fa-check-square">&emsp;</i>entity (data model) definition with Prisma.io</p>
+        <p><i class="fas fa-check-square">&emsp;</i>ACL on frontend</p>
+        <p><i class="fas fa-check-square">&emsp;</i>importing NPM dependencies</p>
+      </div>
+      <div class="hour">
+        <h4>Coming next</h4>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>ACL on backend</p>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>one-click deployment</p>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>more auth methods (Google, Linkedin, ...)</p>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>tighter integration of entities with other features</p>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>themes and layouts</p>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>support for explicitely defined server API</p>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>inline JS - ability to mix JS code with Just Programmers code!</p>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>Typescript support</p>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>server-side rendering</p>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>Visual Editor</p>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>support for different languages on backend</p>
+        <p><i class="fas fa-hourglass-start">&emsp;</i>richer Just Programmers language with better tooling</p>
+      </div>
+    </div>
+    <h1>{ = = }</h1>
+  </section>
+
+
+  <section id="language">
+    <h5>The Language</h5>
+    <h2>Concepts such as app, page, route, auth etc. are baked into Just Programmers, providing the higher level of expressiveness.</h2>
+
+    <div class="lang-li">
+      <div class="continue">
+        <section class="conteudo active" data-section-id="1">
+
+          <div class="codes">
+            <h1>todoApp.Just Programmers</h1>
+            <p>
+              <em>/* global app settings */</em> <br>
+              <span> app todoApp { </span><br>
+              title: <strong>"ToDo App"</strong> <em>/* browser tab title */</em> <br>
+              <span>}</span> <br> <br>
+
+              <em>/* routing */</em> <br>
+              <span>route "/" -> page Main</span> <br>
+              <span> page Main { </span><br>
+              component<span>:</span> import Main from <strong>"@ext/Main"</strong> <em>/* import your React code */ </em><br>
+              <span>}</span>
+            </p>
+          </div>
+
+          <div class="codes">
+            <h1>ext/Main.js | External React code, imported above</h1>
+            <p>
+              import React from <strong>'react'</strong> <br><br>
+              export default <span>()</span>
+              <bold>=></bold> <span>
+                << /span><i>span</i><span>></span> Hello World! <span></< /span><i>span</i><span>></span>
+            </p>
+          </div>
+
+        </section>
+        <section class="conteudo" data-section-id="2">
+
+<div class="codes">
+  <h1>todoApp.Just Programmers</h1>
+  <p>
+  <em>  /* ... */ </em><br><br>
+<em>/* Data model is defined via Prisma Schema Language (PSL) */ </em><br>
+  <span>  entity Task {</span>=psl <br>
+        id          Int     @id @<bold>default</bold><span>(</span><bold>autoincrement</bold><span>())</span> <br>
+        description String <br>
+        isDone      Boolean @<bold>default</bold><span>(</span>false<span>)</span> <br>
+    psl=} <br><br>
+query getTasks <span>{</span> <br>
+      <span>fn: import {</span> getTasks <span>}</span> from <strong>"@ext/queries.js",</strong> <em>/* import Node.js function */ </em><br>
+      <em>/* A list of entities this query uses - useful for automatic invalidation and refetching */ </em><br>
+      entities<span>:</span> [Task] <br>
+    <span>}</span> <br>
+  </p>
+</div>
+
+
+<div class="codes">
+  <h1>ext/queries.js | Node.js function imported in a query above</h1>
+  <p>
+    export const <bold>getTask</bold>s = async <span>(</span>args<span>,</span> context<span>)</span> => <span>{</span> <br>
+    <em>  // Since we above declared this query is using Task, it is automatically injected in the </em><br>
+    <em>  // context.</em> <br>
+      return context.entities.Task.<bold>findMany</bold><span>()</span> <br>
+    <span>}</span> <br>
+  </p>
+</div>
+
+
+
+<div class="codes">
+  <h1>ext/Todo.js | Invoking query from React code</h1>
+  <p>
+    import React from <strong>'react'</strong> <br>
+    import <span>{</span> useQuery <span>}</span> from <strong>'@Just Programmers/queries'</strong> <br>
+    import getTasks from <strong>'@Just Programmers/queries/getTasks.js' </strong><br><br>
+
+    export default <span>()</span> <bold>=></bold> <span>{</span> <br>
+  <em>  // Standard useQuery syntax, Just Programmers provides a thin wrapper around it.  </em><br>
+      const <span>{</span> data: tasks <span>}</span> <bold>= useQuery</bold><span>(</span>getTasks<span>)</span> <br>
+      return <span><</span><b>Tasks tasks</b><span>={</span><i>tasks</i><span>}/></span> <br>
+    <span>}</span> <br>
+  </p>
+</div>
+
+
+
+        </section>
+
+        <section class="conteudo" data-section-id="3">
+          <div class="codes">
+            <h1>todoApp.Just Programmers</h1>
+            <p><em>/* ... */</em> <br><br>
+              <em>/* full-stack auth out-of-the-box */</em><br>
+              <span>auth {</span> <br>
+              userEntity<span>:</span> User<span>,</span><br>
+              methods<span>:</span> [ EmailAndPassword ]<span>,</span> <em>/* more methods coming soon */</em><br>
+              onAuthFailedRedirectTo<span>:</span> <strong>"/login"</strong> <br>
+              <span>}</span> <br><br>
+              <em>/* email & password required because of the auth method above */</em><br>
+              <span>entity User {</span>=psl <br>
+              id Int @id @<bold>default</bold><span>(</span>
+              <bold>autoincrement</bold><span>())</span> <br>
+              email String @unique <br>
+              password String <br>
+              psl=<span>}</span> <br> <br>
+              page Main <span>{ <br>
+                authRequired<span>:</span> true<span>,</span> <em>/* available only to logged in users */</em> <br>
+                component<span>:</span> import Main from <strong>"@ext/Main"</strong> <br>
+                <span>}</span> <br>
+            </p>
+          </div>
+
+          <div class="codes">
+            <h1>ext/Main.js | Checking if user is logged in</h1>
+            <p>
+              import React from <strong>'react'</strong> <br>
+              import Todo from <strong>'./Todo.js'</strong> <br><br>
+              <em>/* Because of authRequired property in todoApp.Just Programmers, this page is</em> <br>
+              <em>* available only to logged in users and prop 'user' is automatically provided by Just Programmers. */ </em> <br>
+              export default <span>({</span> user <span>})</span>
+              <bold>=></bold> <span>{</span> <br>
+              return <span>
+                << /span><b>Todo</b><span>/></span> <br>
+                  <span>}</span> <br>
+            </p>
+          </div>
+        </section>
+
+      </div>
+      <div class="align-link">
+        <a href="#!" class="links active" data-section-id="1">Create a new app</a>
+        <a href="#!" class="links" data-section-id="2">Define and query a data model</a>
+        <a href="#!" class="links" data-section-id="3">Add authenatication</a>
+      </div>
+  </section>
+
+
+<section id="video">
+<h1>Take the tutorial</h1>
+<h2>Take the <span>Todo App tutorial</span> and build a full-fledged Todo app in Just Programmers!</h2>
+<img src="images/todo.gif" alt="">
+</section>
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Docs</h3>
+            <a href="#">Getting Started</a>
+            <a href="#">Todo app tutorial</a>
+            <a href="#">Reference</a>
+        </div>
+        <div class="box">
+            <h3>Community</h3>
+                <a href="#home">Discord</a>
+                <a href="legal.html">Legal notice</a>
+        </div>
+        <div class="box">
+            <h3>More</h3>
+            <a href="#">Github</a>
+            <a href="https://www.linkedin.com/company/just-programmers">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit">&copy;<span> Just Programmers</span> | all rights reserved! </h1>
+
+</section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+
+
+  <script>
+    AOS.init({
+      duration: 800,
+      delay: 400
+    });
+  </script>
+
+</body>
+
+</html>
